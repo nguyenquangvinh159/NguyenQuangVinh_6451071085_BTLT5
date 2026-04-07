@@ -1,0 +1,18 @@
+import 'package:flutter/material.dart';
+import '../views/home_screen.dart';
+import '../views/course_detail_screen.dart';
+import '../utils/routes.dart';
+
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      initialRoute: AppRoutes.home,
+      routes: {
+        AppRoutes.home: (_) => HomeScreen(),
+        AppRoutes.courseDetail: (_) => CourseDetailScreen(),
+      },
+    );
+  }
+}
